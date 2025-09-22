@@ -1,0 +1,15 @@
+CREATE TABLE contatos (
+    "Id" SERIAL PRIMARY KEY, -- autonumerador
+
+    "Nome" VARCHAR(40) NOT NULL,
+    "Apelido" VARCHAR(40),
+
+    "CPF" VARCHAR(14) NOT NULL,
+
+    "Telefone" VARCHAR(15) NOT NULL,
+
+    "Email" VARCHAR(50) NOT NULL,
+
+    "DataCadastro" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "UltimaAlteracao" TIMESTAMP
+);

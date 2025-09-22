@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="row col-md-12">
+    <div data-include="Header.html"></div>
+</div>
+<div class="row col-md-12">
+    <div class="col-md-2">
+        <div data-include="Menu.html"></div>
+    </div>
+    <div class="col-md-10">
+        <div class="d-flex">
+            <div class="content p-4" style="flex-grow: 1;">
+                <!--Conteúdo aq-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<tr>
+    <td><a asp-action="Details" asp-route-id="@item.Id">@item.Nome</a></td>
+    <td><a asp-action="Details" asp-route-id="@item.Id">@item.Apelido</a></td>
+    <td><a asp-action="Details" asp-route-id="@item.Id">@item.Telefone</a></td>
+    <td><a asp-action="Details" asp-route-id="@item.Id">@item.Email</a></td>
+    <td>@item.DataCadastro.ToShortDateString()</td>
+    <td>
+        <a href="Edit.html" class="btn btn-sm editButton">Editar</a> |
+        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm dltButton">Excluir</a>
+    </td>
+</tr>

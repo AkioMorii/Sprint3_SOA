@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contatos</title>
+    <link href="Style/Main.css" rel="stylesheet">
+    <script src="./JS/Valid.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row col-md-12">
+        <div data-include="Header.html"></div>
+    </div>
+    <div class="row col-md-12">
+        <div class="col-md-2">
+            <div data-include="Menu.html"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="d-flex">
+                <div class="content p-4" style="flex-grow: 1;">
+                    <!--Conteúdo aq-->
+                    <div class="container mt-5">
+                        <h2 class="text-center">Relatório de Contatos</h2>
+
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-md-10">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Apelido</th>
+                                            <th scope="col">Telefone</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Data</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabela-relatorio">
+                                        <!-- Os dados serão inseridos aqui via JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- jQuery e Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="JS/script.js"></script>
+<script>Report()</script>

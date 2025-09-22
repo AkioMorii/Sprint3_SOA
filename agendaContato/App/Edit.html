@@ -1,0 +1,65 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="./JS/Valid.js"></script>
+</head>
+
+<body>
+<div class="row col-md-12">
+    <div data-include="Header.html"></div>
+</div>
+<div class="row col-md-12">
+    <div class="col-md-2">
+        <div data-include="Menu.html"></div>
+    </div>
+    <div class="col-md-10">
+        <div class="d-flex">
+            <div class="content p-4" style="flex-grow: 1;">
+                <h1>Editar Contato</h1>
+
+                <form onsubmit="return ValidateSubmit(event, 'edit')">
+                    <input type="hidden" id="Id"/>
+                    <div class="form-group">
+                        <label>Nome: </label>
+                        <input type="text" class="form-control" id="Name" name="Name"/>
+                        <span id="error-Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Apelido: </label>
+                        <input type="text" class="form-control" id="Nickname" name="Nickname"/>
+                        <span id="error-Nickname" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>CPF: </label>
+                        <input type="text" class="form-control" id="CPF" name="CPF" oninput="formatCPF(this)"/>
+                        <span id="error-CPF" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone: </label>
+                        <input type="text" class="form-control" id="Phone" name="Phone" oninput="formatTelefone(this)"/>
+                        <span id="error-Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email: </label>
+                        <input type="text" class="form-control" id="Email" name="Email"/>
+                        <span id="error-Email" class="text-danger"></span>
+                    </div>
+                    <a href="Index.html" class="btn btn-secondary">Cancelar</a>
+                    <button type="submit" class="btn editButton">Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<script src="./JS/Script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="./JS/Mask.js"></script>
+<script>GetOne()</script>

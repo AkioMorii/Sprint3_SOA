@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "nome": "João da Silva",
+        "apelido": "Joca",
+        "cpf": "123.456.789-00",
+        "telefone": "(11)98765-4321",
+        "email": "joao.silva@email.com",
+        "dataCadastro": "2025-09-21T18:07:15.01611",
+        "ultimaAlteracao": null
+    },
+    {
+        "id": 2,
+        "nome": "Maria Oliveira",
+        "apelido": "Mari",
+        "cpf": "987.654.321-11",
+        "telefone": "(21)3456-7890",
+        "email": "maria.oliveira@email.com",
+        "dataCadastro": "2025-09-21T18:07:15.01611",
+        "ultimaAlteracao": null
+    },
+    {
+        "id": 3,
+        "nome": "Carlos Pereira",
+        "apelido": "Carlão",
+        "cpf": "111.222.333-44",
+        "telefone": "(31)99876-1234",
+        "email": "carlos.pereira@email.com",
+        "dataCadastro": "2025-09-21T18:07:15.01611",
+        "ultimaAlteracao": null
+    },
+    {
+        "id": 4,
+        "nome": "Ana Souza",
+        "apelido": "Aninha",
+        "cpf": "555.666.777-88",
+        "telefone": "(41)91234-5678",
+        "email": "ana.souza@email.com",
+        "dataCadastro": "2025-09-21T18:07:15.01611",
+        "ultimaAlteracao": null
+    },
+    {
+        "id": 5,
+        "nome": "Fernanda Lima",
+        "apelido": "Fê",
+        "cpf": "999.888.777-66",
+        "telefone": "(51)3234-5678",
+        "email": "fernanda.lima@email.com",
+        "dataCadastro": "2025-09-21T18:07:15.01611",
+        "ultimaAlteracao": null
+    }
+]

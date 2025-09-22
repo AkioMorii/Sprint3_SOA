@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="row col-md-12">
+        <div data-include="Header.html"></div>
+    </div>
+    <div class="row col-md-12">
+        <div class="col-md-2">
+            <div data-include="Menu.html"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="d-flex">
+                <!-- Body -->
+                <div class="content p-4" style="flex-grow: 1;">        
+                    <h1>Contatos</h1>
+
+                    <form >
+                        <p>
+                            Filtro por Nome:
+                            <input type="text" id="filtroNome"name="filtroNome" />
+                            <input type="button" id="search" value="Buscar" />
+                        </p>
+                    </form>
+
+                    <p>
+                        <a href="Create.html" class="btn btn-primary">Novo Contato</a>
+                    </p>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Apelido</th>
+                                <th>Telefone</th>
+                                <th>Email</th>
+                                <th>Data de Cadastro</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dadosPessoais">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>   
+    </div>
+</body>
+<script src="/JS/Script.js"></script>
+<script src="/JS/Valid.js"></script>
+<script>List()</script>
+</html>

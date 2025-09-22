@@ -1,0 +1,32 @@
+.sidebar .nav-link {
+        transition: all 0.3s ease;
+    }
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 1rem;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+    color: white;
+}
+.table {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Deixa o fundo da tabela mais claro */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
